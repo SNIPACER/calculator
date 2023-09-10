@@ -3,52 +3,156 @@
 }
 
 body {
+  overflow: hidden;
   margin: 0px;
-  background: linear-gradient(180deg, rgb(0, 0, 0) 36%, rgb(0, 5, 50) 100%);
+  font-family: "Inter", sans-serif;
+}
+
+.col-1 {
+  width: 8.33%;
+}
+
+.col-2 {
+  width: 16.66%;
+}
+
+.col-3 {
+  width: 25%;
+}
+
+.col-4 {
+  width: 33.33%;
+}
+
+.col-5 {
+  width: 41.66%;
+}
+
+.col-6 {
+  width: 50%;
+}
+
+.col-7 {
+  width: 58.33%;
+}
+
+.col-8 {
+  width: 66.66%;
+}
+
+.col-9 {
+  width: 75%;
+}
+
+.col-10 {
+  width: 83.33%;
+}
+
+.col-11 {
+  width: 91.66%;
+}
+
+.col-12 {
   width: 100%;
-  height: 100%;
-  font-family: sans-serif;
-  font-size: 16px;
 }
 
-main {
+.wrapper {
   margin: 0px auto;
-  padding: 2% 0;
-  width: 30%;
+  background: linear-gradient(180deg, rgb(0, 0, 0) 0%, rgb(0, 39, 46) 100%);
+  padding: 2% 2%;
+  width: 100%;
   height: 100vh;
-  min-width: 375px;
-  min-height: 750px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
 }
-
-.container {
+.wrapper .container {
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  padding: 2% 2%;
   width: 100%;
   height: 100%;
-  padding: 5% 2%;
-  border-radius: 10%;
-  background: black;
-  border: 1px solid white;
-}
-
-.screen {
-  height: 35%;
-  width: 100%;
   color: aliceblue;
 }
-
-.buttons {
+.wrapper .container .header-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+  gap: 5%;
+}
+.wrapper .container .header-container h1 {
+  font-size: 3vw;
+}
+.wrapper .container .header-container .top-buttons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  gap: 3vw;
+}
+.wrapper .container .header-container .top-buttons a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  width: 100%;
+  height: 100%;
+}
+.wrapper .container .header-container .top-buttons a img {
+  width: 4vw;
+}
+.wrapper .container .header-container .top-buttons .theme-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  background: none;
+  border: none;
+  padding: 0px;
+}
+.wrapper .container .header-container .top-buttons .theme-button img {
+  background: white;
+  border-radius: 50%;
+  width: 4vw;
+}
+.wrapper .container .output-screen {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  justify-content: flex-start;
+  gap: 2vw;
+}
+.wrapper .container .output-screen input[type=text] {
+  height: 4.5vw;
+  border-radius: 4vw;
+  border: none;
+  font-size: 2vw;
+  padding: 0px 1.5vw;
+}
+.wrapper .container .output-screen input[type=button] {
+  height: 33.33%;
+  border: none;
+  font-size: 3vw;
+}
+.wrapper .buttons {
   display: grid;
   gap: 3%;
   width: 100%;
   height: 65%;
   grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: repeat(5, 1fr);
+  grid-template-rows: repeat(4, 1fr);
 }
-
-.btn {
+.wrapper .buttons input {
+  font-size: 3vw;
+}
+.wrapper .btn {
   display: flex;
   align-items: center;
   justify-content: center;

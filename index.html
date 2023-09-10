@@ -1,37 +1,59 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Advanced Calculator With Dark Mode." />
+  <link rel="icon" type="image/x-icon" href="assets/images/calculator.svg">
   <link rel="stylesheet" href="./assets/dist/css/main.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Crimson+Text&family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap"
+    rel="stylesheet">
   <title>Calculator</title>
 </head>
+
 <body>
-  <main>
+  <div class="wrapper">
     <div class="container">
-      <div class="screen"></div>
-      <div class="buttons">
-        <div class="btn" id="ac">AC</div>
-        <div class="btn" id="back">clr</div>
-        <div class="btn operators" id="percent">%</div>
-        <div class="btn operators" id="division">/</div>
-        <div class="btn numbers" id="seven">7</div>
-        <div class="btn numbers" id="eight">8</div>
-        <div class="btn numbers" id="nine">9</div>
-        <div class="btn operators" id="multiply">X</div>
-        <div class="btn numbers" id="four">4</div>
-        <div class="btn numbers" id="five">5</div>
-        <div class="btn numbers" id="six">6</div>
-        <div class="btn operators" id="minus">-</div>
-        <div class="btn numbers" id="one">1</div>
-        <div class="btn numbers" id="two">2</div>
-        <div class="btn numbers" id="three">3</div>
-        <div class="btn operators" id="plus">+</div>
-        <div class="btn numbers" id="zero">0</div>
-        <div class="btn operators" id="period">.</div>
-        <div class="btn operators" id="equal">=</div>
+      <div class="header-container">
+        <h1 class="col-6" id="heading">Advanced Calculator</h1>
+        <div class="top-buttons col-1">
+          <a href="https://github.com/snipacer/calculator">
+            <img src="assets/images/GitHubLight.svg" alt="github Icon" id="github-icon">
+          </a>
+          <button type="button" onclick="changeTheme()" class="theme-button">
+            <img src="assets/images/darkMode.svg" alt="Theme Icon" id="theme-icon">
+          </button>
+        </div>
+      </div>
+      <div class="output-screen">
+        <input class="col-8" type="text" name="result" id="result" placeholder="Result" readonly />
+        <input class="col-4" type="button" value="C" onclick="result.value=''" id="clear-button" />
+      </div>
+      <div class="buttons first-row">
+        <input type="button" value="1" onclick="liveScreen(1)" />
+        <input type="button" value="2" onclick="liveScreen(2)" />
+        <input type="button" value="3" onclick="liveScreen(3)" />
+        <input type="button" value="+" onclick="liveScreen('+')" />
+        <input type="button" value="4" onclick=" liveScreen(4)" />
+        <input type="button" value="5" onclick=" liveScreen(5)" />
+        <input type="button" value="6" onclick=" liveScreen(6)" />
+        <input type="button" value="-" onclick="liveScreen('-')" />
+        <input type="button" value="7" onclick="liveScreen(7)" />
+        <input type="button" value="8" onclick="liveScreen(8)" />
+        <input type="button" value="9" onclick=" liveScreen(9)" />
+        <input type="button" value="x" onclick="liveScreen('*')" />
+        <input type="button" value="/" onclick="liveScreen('/')" />
+        <input type="button" value="0" onclick="liveScreen(0)" />
+        <input type="button" value="." onclick="liveScreen('.')" />
+        <input type="button" value="=" onclick="calculate(result.value)" />
       </div>
     </div>
-  </main>
+  </div>
+  <script src=""></script>
 </body>
+
 </html>

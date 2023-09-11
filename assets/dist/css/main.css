@@ -3,7 +3,6 @@
 }
 
 body {
-  overflow: hidden;
   margin: 0px;
   font-family: "Inter", sans-serif;
 }
@@ -66,12 +65,14 @@ body {
   align-items: center;
   justify-content: center;
   flex-direction: row;
+  gap: 0;
 }
 .wrapper .container {
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  gap: 2vw;
   padding: 2% 2%;
   width: 100%;
   height: 100%;
@@ -82,12 +83,12 @@ body {
   align-items: center;
   justify-content: center;
   flex-direction: row;
-  flex-wrap: wrap;
-  width: 100%;
   gap: 5%;
+  width: 100%;
 }
 .wrapper .container .header-container h1 {
-  font-size: 3vw;
+  font-size: 5vw;
+  margin: 0;
 }
 .wrapper .container .header-container .top-buttons {
   display: flex;
@@ -101,6 +102,7 @@ body {
   align-items: center;
   justify-content: center;
   flex-direction: row;
+  gap: 0;
   width: 100%;
   height: 100%;
 }
@@ -112,6 +114,7 @@ body {
   align-items: center;
   justify-content: center;
   flex-direction: row;
+  gap: 0;
   background: none;
   border: none;
   padding: 0px;
@@ -121,42 +124,37 @@ body {
   border-radius: 50%;
   width: 4vw;
 }
-.wrapper .container .output-screen {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: row;
-  justify-content: flex-start;
-  gap: 2vw;
-}
-.wrapper .container .output-screen input[type=text] {
-  height: 4.5vw;
-  border-radius: 4vw;
-  border: none;
-  font-size: 2vw;
-  padding: 0px 1.5vw;
-}
-.wrapper .container .output-screen input[type=button] {
-  height: 33.33%;
-  border: none;
-  font-size: 3vw;
-}
-.wrapper .buttons {
+.wrapper .container .content .buttons {
   display: grid;
   gap: 3%;
-  width: 100%;
-  height: 65%;
   grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: repeat(4, 1fr);
+  grid-template-rows: repeat(5, 1fr);
 }
-.wrapper .buttons input {
+.wrapper .container .content .buttons input {
+  color: aliceblue;
+  background-color: rgb(47, 51, 50);
+  border: none;
   font-size: 3vw;
+  border-radius: 4vw;
 }
-.wrapper .btn {
+.wrapper .container .content .buttons input[type=text] {
+  padding: 2vw;
+  grid-column: 1/span 3;
+}
+.wrapper .container .content .buttons input[type=button]:hover {
+  color: cyan;
+  cursor: pointer;
+  background-color: rgb(101, 101, 101);
+}
+.wrapper .container .content .buttons input.clear {
+  background-color: red;
+}
+.wrapper .container .content .btn {
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: row;
+  gap: 0;
   border-radius: 50%;
   width: 100%;
   background: #A5A5A5;

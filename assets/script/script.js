@@ -3,9 +3,6 @@ const darkTheme = "assets/dist/css/dark.css";
 const themeIcon = document.getElementById("theme-icon");
 const res = document.getElementById("result");
 const heading = document.getElementById("heading");
-const githubIcon = document.getElementById("github-icon");
-const gitHubDark = "assets/images/GitHubDark.svg";
-const gitHubLight = "assets/images/GitHubLight.svg";
 const sunIcon = "assets/images/darkMode.svg";
 const moonIcon = "assets/images/lightMode.svg";
 
@@ -29,12 +26,10 @@ function changeTheme() {
   }, 1500);
   if (theme.getAttribute("href") === lightTheme) {
     theme.setAttribute("href", darkTheme);
-    githubIcon.setAttribute("href", gitHubDark)
     themeIcon.setAttribute("src", sunIcon);
     heading.innerHTML = "Dark Mode";
   } else {
     theme.setAttribute("href", lightTheme);
-    githubIcon.setAttribute("href", gitHubLight);
     themeIcon.setAttribute("src", moonIcon);
     heading.innerHTML = "Light Mode";
   }

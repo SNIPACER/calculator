@@ -57,7 +57,6 @@ body {
 
 .wrapper {
   margin: 0px auto;
-  background: linear-gradient(180deg, rgb(0, 0, 0) 0%, rgb(0, 39, 46) 100%);
   padding: 2% 2%;
   width: 100%;
   height: 100vh;
@@ -90,6 +89,11 @@ body {
   font-size: 5vw;
   margin: 0;
 }
+@media (orientation: portrait) {
+  .wrapper .container .header-container h1 {
+    font-size: 5vh;
+  }
+}
 .wrapper .container .header-container .top-buttons {
   display: flex;
   align-items: center;
@@ -109,6 +113,11 @@ body {
 .wrapper .container .header-container .top-buttons a img {
   width: 4vw;
 }
+@media (orientation: portrait) {
+  .wrapper .container .header-container .top-buttons a img {
+    width: 5vh;
+  }
+}
 .wrapper .container .header-container .top-buttons .theme-button {
   display: flex;
   align-items: center;
@@ -119,32 +128,50 @@ body {
   border: none;
   padding: 0px;
 }
+.wrapper .container .header-container .top-buttons .theme-button:hover {
+  cursor: pointer;
+}
 .wrapper .container .header-container .top-buttons .theme-button img {
   background: white;
   border-radius: 50%;
   width: 4vw;
 }
+@media (orientation: portrait) {
+  .wrapper .container .header-container .top-buttons .theme-button img {
+    width: 5vh;
+  }
+}
+@media (orientation: portrait) {
+  .wrapper .container .content {
+    width: 90%;
+  }
+}
 .wrapper .container .content .buttons {
   display: grid;
   gap: 3%;
   grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: repeat(5, 1fr);
+  grid-template-rows: repeat(6, 1fr);
+}
+@media (orientation: portrait) {
+  .wrapper .container .content .buttons {
+    height: 50vh;
+    grid-template-columns: none;
+    grid-template-rows: none;
+  }
 }
 .wrapper .container .content .buttons input {
-  color: aliceblue;
-  background-color: rgb(47, 51, 50);
   border: none;
   font-size: 3vw;
   border-radius: 4vw;
 }
-.wrapper .container .content .buttons input[type=text] {
-  padding: 2vw;
-  grid-column: 1/span 3;
+@media (orientation: portrait) {
+  .wrapper .container .content .buttons input {
+    font-size: 3vh;
+  }
 }
-.wrapper .container .content .buttons input[type=button]:hover {
-  color: cyan;
-  cursor: pointer;
-  background-color: rgb(101, 101, 101);
+.wrapper .container .content .buttons input[type=text] {
+  padding: 1vw 2vw;
+  grid-column: 1/span 4;
 }
 .wrapper .container .content .buttons input.clear {
   background-color: red;

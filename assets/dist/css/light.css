@@ -1,16 +1,20 @@
 .wrapper {
   background: #35A29F;
+  transition: 1s;
 }
 
 #clear-button{
   color: #fff;
+  transition: 1s;
 }
 .wrapper .container .content .buttons input {
   color: initial;
   background-color: #fff;
+  transition: 1s;
 }
 .wrapper .container .content .buttons input[type=button]:hover {
   color: cyan;
   cursor: pointer;
   background-color: #071952;
+  transition: 1s;
 }/*# sourceMappingURL=light.css.map */

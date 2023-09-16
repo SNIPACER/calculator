@@ -2,6 +2,9 @@
   background: #35A29F;
 }
 
+#clear-button{
+  color: #fff;
+}
 .wrapper .container .content .buttons input {
   color: initial;
   background-color: #fff;

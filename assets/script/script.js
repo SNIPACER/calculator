@@ -22,7 +22,6 @@ function calculate(value) {
   }
 }
 
-// Swaps the stylesheet to achieve dark mode.
 function changeTheme() {
   const theme = document.getElementById("theme");
   setTimeout(() => {
@@ -41,7 +40,6 @@ function changeTheme() {
   }
 }
 
-// Displays entered value on screen.
 function liveScreen(enteredValue) {
   console.log(enteredValue);
   if (!res.value) {
@@ -56,17 +54,10 @@ function backspace(){
   res.value = remove.substring(0, res.value.length - 1);
 }
 
-//adding event handler on the document to handle keyboard inputs
 document.addEventListener("keydown", keyboardInputHandler);
 
-//function to handle keyboard inputs
 function keyboardInputHandler(e) {
-  // to fix the default behavior of browser,
-  // enter and backspace were causing undesired behavior when some key was already in focus.
   e.preventDefault();
-  //grabbing the liveScreen
-
-  //numbers
   if (e.key === "0") {
     res.value += "0";
   } else if (e.key === "1") {
@@ -91,7 +82,6 @@ function keyboardInputHandler(e) {
     res.value += "9";
   }
 
-  //operators
   if (e.key === "+") {
     res.value += "+";
   } else if (e.key === "-") {
@@ -102,20 +92,16 @@ function keyboardInputHandler(e) {
     res.value += "/";
   }
 
-  //decimal key
   if (e.key === ".") {
     res.value += ".";
   }
 
-  //press enter to see result
   if (e.key === "Enter") {
     calculate(result.value);
   }
 
-  //backspace for removing the last input
   if (e.key === "Backspace") {
     const resultInput = res.value;
-    //remove the last element in the string
     res.value = resultInput.substring(0, res.value.length - 1);
   }
 }

@@ -1,5 +1,6 @@
 .wrapper {
   background:  #35A29F ;
+  transition: 1s;
 }
 .wrapper {
   .container {
@@ -8,6 +9,7 @@
         input{
           color: initial;
           background-color: #CCC8AA;
+          transition: 1s;
         }
 
         input[type="button"]:hover{

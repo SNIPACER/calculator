@@ -1,0 +1,23 @@
+.wrapper {
+  background:  #35A29F ;
+}
+.wrapper {
+  .container {
+    .content {
+      .buttons {
+        input{
+          color: initial;
+          background-color: #CCC8AA;
+        }
+
+        input[type="button"]:hover{
+          color: cyan;
+          cursor: pointer;
+          background-color: #071952;
+        }
+      }
+    }
+  }
+}
+
+

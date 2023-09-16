@@ -6,12 +6,14 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Advanced Calculator With Dark Mode." />
   <link rel="icon" type="image/x-icon" href="assets/images/calculator.svg">
-  <link rel="stylesheet" href="./assets/dist/css/main.css">
+  <link rel="stylesheet" href="./assets/dist/css/dark.css"  id="theme">
+  <link rel="stylesheet" href="./assets/dist/css/main.css" >
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link
     href="https://fonts.googleapis.com/css2?family=Crimson+Text&family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap"
     rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <title>Calculator</title>
 </head>
 
@@ -19,7 +21,7 @@
   <div class="wrapper">
     <div class="container">
       <div class="header-container">
-        <h1 id="heading">Advanced Calculator</h1>
+        <h1 id="heading">Calculator</h1>
         <div class="top-buttons">
           <a href="https://github.com/snipacer/calculator">
             <img src="assets/images/GitHubLight.svg" alt="github Icon" id="github-icon">
@@ -33,17 +35,20 @@
         <div class="buttons first-row">
           <input class="output" type="text" name="result" id="result" placeholder="Result" readonly />
           <input class="clear" type="button" value="C" onclick="result.value=''" id="clear-button" />
+          <input type="button" value="(" onclick="liveScreen(this.value)" />
+          <input type="button" value=")" onclick="liveScreen(this.value)" />
+          <input type="button" value="⌫" onclick="backspace()" />
           <input type="button" value="1" onclick="liveScreen(1)" />
           <input type="button" value="2" onclick="liveScreen(2)" />
           <input type="button" value="3" onclick="liveScreen(3)" />
           <input type="button" value="+" onclick="liveScreen('+')" />
-          <input type="button" value="4" onclick=" liveScreen(4)" />
-          <input type="button" value="5" onclick=" liveScreen(5)" />
-          <input type="button" value="6" onclick=" liveScreen(6)" />
+          <input type="button" value="4" onclick="liveScreen(4)" />
+          <input type="button" value="5" onclick="liveScreen(5)" />
+          <input type="button" value="6" onclick="liveScreen(6)" />
           <input type="button" value="-" onclick="liveScreen('-')" />
           <input type="button" value="7" onclick="liveScreen(7)" />
           <input type="button" value="8" onclick="liveScreen(8)" />
-          <input type="button" value="9" onclick=" liveScreen(9)" />
+          <input type="button" value="9" onclick="liveScreen(9)" />
           <input type="button" value="x" onclick="liveScreen('*')" />
           <input type="button" value="/" onclick="liveScreen('/')" />
           <input type="button" value="0" onclick="liveScreen(0)" />

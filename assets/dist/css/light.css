@@ -14,3 +14,8 @@
   cursor: pointer;
   background-color: #071952;
 }/*# sourceMappingURL=light.css.map */
+
+.wrapper .container .header-container .top-buttons .theme-button img{
+  background: none; 
+  border-radius: none; 
+}

@@ -1,5 +1,6 @@
 .wrapper {
   background: linear-gradient(180deg, rgba(0, 0, 0, 1) 0%, rgb(0 39 46) 100%);
+  transition: 1s;
 }
 .wrapper {
   .container {
@@ -8,6 +9,7 @@
         input{
           color: aliceblue;
           background-color: rgb(47, 51, 50);
+          transition: 1s;
         }
 
         input[type="button"]:hover{

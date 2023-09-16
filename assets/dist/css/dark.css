@@ -1,13 +1,16 @@
 .wrapper {
   background: linear-gradient(180deg, rgb(0, 0, 0) 0%, rgb(0, 39, 46) 100%);
+  transition: 1s;
 }
 
 .wrapper .container .content .buttons input {
   color: aliceblue;
   background-color: rgb(47, 51, 50);
+  transition: 1s;
 }
 .wrapper .container .content .buttons input[type=button]:hover {
   color: cyan;
   cursor: pointer;
   background-color: rgb(101, 101, 101);
+  transition: 1s;
 }/*# sourceMappingURL=dark.css.map */

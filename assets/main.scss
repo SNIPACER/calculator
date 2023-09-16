@@ -55,8 +55,6 @@
             cursor: pointer;
           }
           img {
-            background: white;
-            border-radius: 50%;
             @media (orientation : $portrait){
               width: 5vh;
             }

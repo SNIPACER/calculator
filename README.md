@@ -4,3 +4,7 @@ A  Calculator App built with HTML, SCSS, and JavaScript. It also has a History l
 
 ![Dark & Light Mode](./assets/images/screenshot.png)
 
+# Contribution
+
+scss output should be `assets/dist/css`
+

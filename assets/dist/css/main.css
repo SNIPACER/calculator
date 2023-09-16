@@ -132,8 +132,6 @@ body {
   cursor: pointer;
 }
 .wrapper .container .header-container .top-buttons .theme-button img {
-  background: white;
-  border-radius: 50%;
   width: 4vw;
 }
 @media (orientation: portrait) {
